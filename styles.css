@@ -1,0 +1,208 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+    background: #fff;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 40px);
+}
+
+.sidebar {
+    width: 200px;
+    background: #fff;
+    color: #000;
+    border: 1px solid #ddd;
+    padding: 20px;
+    height: 100vh;
+    overflow: auto;
+}
+
+.sidebar h3 {
+    margin: 0 0 10px 0;
+    color: #50b3a2;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li a {
+    color: #000;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    border-bottom: 1px solid #eee;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background: #50b3a2;
+    color: #fff;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background: #fff;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main-content .header {
+    background: #50b3a2;
+    color: #fff;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.main-content .header h2 {
+    color: #fff;
+    margin: 0;
+}
+
+.main-content #content {
+    padding-top: 60px;
+    overflow-y: auto;
+    height: calc(100vh - 60px);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #50b3a2;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background: #50b3a2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background: #449d84;
+}
+
+/* Additional styles for login container */
+.login-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.login-container h2 {
+    color: #50b3a2;
+    text-align: center;
+}
+
+/* styles.css */
+/* styles.css */
+/* ... 其他样式保持不变 ... */
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px; /* 调整为适当的外边距 */
+}
+
+.form-btn {
+    flex: 1; /* 使按钮占据相等的空间 */
+    padding: 10px; /* 调整为适当的内边距 */
+    margin: 5px; /* 调整为适当的外边距 */
+    background-color: #50b3a2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    height: auto; /* 确保高度自动调整以适应内容 */
+}
+
+.form-btn:hover {
+    background-color: #449d84;
+}
+
+/* 由于返回按钮是type="button"，不需要提交表单，可以添加额外的样式来区分它和提交按钮 */
+button.form-btn {
+    background-color: #f4f4f4;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+button.form-btn:hover {
+    background-color: #e9e9e9;
+}
+
+/* 调整textarea的样式以消除顶部空白 */
+#content {
+    margin-top: 0; /* 移除顶部外边距 */
+    padding: 5px; /* 调整内边距以更紧凑 */
+    height: 250px; /* 设置固定高度 */
+    resize: vertical;
+}
